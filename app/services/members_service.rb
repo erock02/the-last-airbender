@@ -2,7 +2,7 @@ class MembersService
   class << self
 
   def get_nation_members(nation)
-    call_api("/api/v1/characters?affiliation=#{nation}")
+    call_api("/api/v1/characters?affiliation=#{nation}&perPage=500")
   end
 
   private

@@ -1,0 +1,10 @@
+<h1>Members</h1>
+<h2> Member count: <%= @members.count %> </h2>
+<% @members.first(25).each do |member| %>
+<p>
+  <img src= <%= member.photo %> >
+  <h3> member name: <%=  member.name%> </h3>
+  <p> member allies: <%= member.allies %> </p>
+  <p> member enemies: <%= member.enemies %> </p>
+</p>
+<% end %>
